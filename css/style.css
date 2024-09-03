@@ -1,0 +1,133 @@
+/* navbar */
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.nav-link i {
+    margin-right: 0.5rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+    border-radius: 5px;
+}
+
+/* carausel */
+.carousel-caption {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 70px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+.carousel-caption p {
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+.carousel-item {
+    position: relative;
+    height: 100vh; /* Ensure the carousel item takes full viewport height */
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.container .card-up {
+    height: 100px;
+    border-radius: 0.25rem;
+}
+
+.avatar {
+    position: relative;
+    width: 200px;  /* Set the width for square images */
+    height: 200px; /* Set the height for square images */
+    margin: 0 auto;
+    overflow: hidden; /* Hide any overflow of the image */
+    border-radius: 0; /* Optional: for rounded corners */
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the square area */
+    display: block;
+}
+
+
+/* testimonial */
+.testimonials-section .testimonial {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials-section .testimonial .avatar {
+    margin-bottom: 20px;
+}
+
+.testimonials-section .testimonial .avatar img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.testimonials-section .testimonial h4 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.testimonials-section .testimonial h6 {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.testimonials-section .testimonial p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonials-section .testimonial .btn-floating {
+    background-color: #007bff;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.testimonials-section .testimonial .btn-floating:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.testimonials-section .testimonial p i {
+    color: #007bff;
+}
